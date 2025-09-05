@@ -8,9 +8,10 @@ const StoryView = ({ story, onBack }) => {
       </button>
       <div className="story-content">
         <h2>{story.title}</h2>
-        <h4>by {story.author}</h4>
+        
         <img src={story.cover} alt={story.title} className="story-view-cover" />
         <p>{story.content}</p>
+        <h4>by {story.author}</h4>
       </div>
     </div>
   );
